@@ -1,0 +1,1 @@
+emcc file.c  -o file.js -O0 --js-library "d:/emsdk/upstream/emscripten/src/lib/libworkerfs.js" -s EXPORTED_FUNCTIONS="['_read_file','_malloc','_free']" -s FORCE_FILESYSTEM=1 -s TOTAL_MEMORY=1024MB -lworkerfs.js -s ENVIRONMENT=worker
